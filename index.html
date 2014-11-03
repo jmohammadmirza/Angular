@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="animationApp">
+<head>
+<title>Angular .js Animate</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div class="container" ng-controller="FruitsController">
+	<input type="text" placeholder="Start typing to filter.." class="searchBox" />
+<div class="item" ng-repeat="fruit in fruits">{{fruit}}</div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+<script type="text/javascript" src="angular-animate.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<!--<script type="text/javascript">
+angular.module("animationApp",['ngAnimate']).controller("FruitsController", function($scope){
+
+	$scope.fruits = ["Apple","Apricot","Avocado","Banana","Breadfruit","Bilberry","Blackberry","Blackcurrant","Blueberry","Boysenberry","Cantaloupe","Currant","Cherry","Cherimoya","Cloudberry","Coconut","Cranberry","Cucumber","Damson","Date","Dragonfruit","Durian"];
+
+});
+</script> -->
+  </body>
+</html>
